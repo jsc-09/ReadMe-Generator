@@ -1,6 +1,21 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+const generateReadMe = ({projectTitle, description, instructions , usage , contribution , test, license, github, email }) =>
+`
+#${projectTitle}
+${description}
+${instructions}
+${usage}
+${contribution}
+${test}
+${license}
+${github}
+${email}
+`
+
+
+
 inquirer
     .prompt([
         {
@@ -53,5 +68,9 @@ inquirer
     ])
 
 .then((answers) => {
-    console.log(answers);
+    //console.log(answers);
+    const readMeContent = generateReadMe(answers);
+    fs.writeFile('test.md', readMeContent, (err) => err ? console.group(err): console.log('success')
+    );
 });
+
