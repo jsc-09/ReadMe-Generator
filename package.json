@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "0.0.1",
+  "description": "A generator to create a Readme file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsc-09/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "author": "Joanna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsc-09/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jsc-09/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
