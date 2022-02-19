@@ -17,6 +17,8 @@ const generateMarkdown = require('./utils/generateMarkdown')
 // ${github}<br>
 // ${email}<br>
 // `
+
+//ask project questions: 
 async function init() {
     const answers = await inquirer
         .prompt([
